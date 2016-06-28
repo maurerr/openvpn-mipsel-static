@@ -42,9 +42,9 @@ make install DESTDIR=$BASE
 ########### #################################################################
 
 mkdir -p $SRC/openssl && cd $SRC/openssl
-$WGET https://www.openssl.org/source/openssl-1.0.2d.tar.gz
-tar zxvf openssl-1.0.2d.tar.gz
-cd openssl-1.0.2d
+$WGET https://www.openssl.org/source/openssl-1.0.2h.tar.gz
+tar zxvf openssl-1.0.2h.tar.gz
+cd openssl-1.0.2h
 
 ./Configure linux-mips32 \
 -mtune=mips32 -mips32 -ffunction-sections -fdata-sections -Wl,--gc-sections \
@@ -78,9 +78,9 @@ make install DESTDIR=$BASE
 ########### #################################################################
 
 mkdir $SRC/openvpn && cd $SRC/openvpn
-$WGET http://swupdate.openvpn.org/community/releases/openvpn-2.3.8.tar.gz
-tar zxvf openvpn-2.3.8.tar.gz
-cd openvpn-2.3.8
+$WGET http://swupdate.openvpn.org/community/releases/openvpn-2.3.11.tar.gz
+tar zxvf openvpn-2.3.11.tar.gz
+cd openvpn-2.3.11
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
